@@ -1,4 +1,4 @@
-# Blossom_
+# Demo_1
 Demonstrating Version Control with Git and Github
 ##Steps to push files to Github using Git
 1. Create a repository on GitHub

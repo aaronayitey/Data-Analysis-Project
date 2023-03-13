@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="main.css">
+  <title>Frontend Mentor | Skilled e-learning landing page</title>
+</head>
+
+<body>
+  <nav>
+    <p>skilled</p>
+    <button><a href="#">Get Started</a></button>
+  </nav>
+
+  <div class="container" id="container">
+    <div class="element-left" id="element-left">
+      <h1>Maximize skill, <br> minimize budget</h1>
+      <p>Our modern courses across a range of in-demand skills will give you the knowledge you need to live the life you want.</p>
+      <button><a href="#">Get Started</a></button>
+    </div>
+
+    <div class="image">
+      <picture>
+        <source media="(max-width: 480px)" srcset="assets\image-hero-mobile.png,
+        assets\image-hero-mobile.webp,
+        assets\image-hero-mobile@2x.png,
+        assets\image-hero-mobile@2x.webp">
+
+        <source media="(max-width: 768px)" srcset="assets\image-hero-tablet.png,
+        assets\image-hero-tablet.webp,
+        assets\image-hero-tablet@2x.png,
+        assets\image-hero-tablet@2x.webp">
+
+        <source media="(min-width: 769px)" srcset="assets\image-hero-desktop.png,
+        assets\image-hero-desktop.webp,
+        assets\image-hero-desktop@2x.png,
+        assets\image-hero-desktop@2x.webp">
+
+        <img src="assets/image-hero-mobile.png" alt="Lady drinking from a mug" style="object-fit: cover;">
+      </picture>
+    </div>
+  </div>
+
+  <div class="grid-elements">
+    <div class="h3">
+      <h3>Check out our most<br>popular courses!</h3>
+    </div>
+
+    <div class="box">
+      <img src="assets/icon-animation.svg" alt="Animation">
+      <h4>Animation</h4>
+      <p>Learn the latest animation techniques to create stunning motion
+        design and captivate your audience.</p>
+      <p class="hover"><a href="">Get Started</a> </p>
+    </div>
+
+    <div class="box">
+      <img src="assets/icon-design.svg" alt="Design">
+      <h4>Design</h4>
+      <p>Create beautiful, usable interfaces to help shape the future of
+        how the web looks. <br>
+      <br></p>
+      <p class="hover"><a href="">Get Started</a> </p>
+    </div>
+
+    <div class="box">
+      <img src="assets/icon-photography.svg" alt="Photography">
+      <h4>Photography</h4>
+      <p>Explore critical fundamentals like lighting, composition, and focus
+        to capture exceptional photos. <br>
+      <br></p>
+      <p class="hover"><a href="">Get Started</a> </p>
+    </div>
+
+    <div class="box">
+      <img src="assets/icon-crypto.svg" alt="Crypto">
+      <h4>Crypto</h4>
+      <p>All you need to know to get started investing in crypto. Go from beginner
+        to advanced with this 54 hour course.</p>
+      <p class="hover"><a href="">Get Started</a> </p>
+    </div>
+
+    <div class="box">
+      <img src="assets/icon-business.svg" alt="Business">
+      <h4>Business</h4>
+      <p>A step-by-step playbook to help you start, scale, and sustain your business
+        without outside investment.</p>
+      <p class="hover"><a href="">Get Started</a> </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>skilled</p>
+    <button><a href="">Get Started</a></button>
+  </footer>
+</body>
+</html>

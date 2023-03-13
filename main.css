@@ -1,0 +1,290 @@
+body {
+    background: linear-gradient(white 45%, #F0F1FF 65%);
+    margin: 0%;
+    padding: 0px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav p {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 35px;
+    margin-left: 5%;
+}
+
+nav button {
+    padding: 15px 24px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    background-color: #13183F;
+    margin-right: 5%;
+    z-index: 2;
+}
+
+nav button:hover {
+    background-color: #666CA3;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
+.container {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container h1 {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0px;
+}
+
+.container p {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #83869A;
+}
+
+.container button {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(#FF6F48 25%, #F02AA6 75%);
+    margin-right: 5%;
+}
+
+.container button:hover {
+    background: #FFA7C3;
+}
+
+.container a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+    line-height: 26px;
+}
+
+.container img {
+    
+    padding-top: 36px;
+}
+
+.grid-elements {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: grid;
+    row-gap: 40px;
+}
+
+.grid-elements .h3 {
+    background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
+    border-radius: 10px;
+    padding: 4px 0px 4px 10%;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+
+.box {
+    margin-top: 0;
+    background-color: white;
+    border-radius: 10px;
+    height: aut0;
+}
+
+.grid-elements img {
+    padding-left: 10%;
+    position: relative;
+    bottom: 25px;
+}
+
+.grid-elements h4 {
+    margin-top: 0px;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 25px;
+    color: #13183F;
+    padding-left: 10%;
+
+}
+
+.grid-elements p {
+    padding-left: 10%;
+    padding-right: 5%;
+    font-weight: 500;
+    font-size: 16px;
+    color: #83869A;
+    line-height: 26px;
+    letter-spacing: 0px;
+}
+
+.hover {
+    padding: 24px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.grid-elements a {
+    text-decoration: none;
+    color: #F74780;
+}
+
+.grid-elements a:hover {
+    color: #FFA7C3;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13183F;
+    height: 120px;
+    margin-top: 80px;
+}
+
+footer p {
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 35px;
+    margin-left: 5%;
+    font-size: 25px;
+    line-height: 35px;
+    color: white;
+}
+
+footer button {
+    border-color: #4851FF;
+    padding: 20px 24px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #4851FF 20%, #F02AA6 80%);
+    margin-right: 5%;
+}
+
+footer button:hover {
+    background: #f8a9f3;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: left;
+    color: white;
+}
+
+
+@media (min-width: 480px) {
+
+    .container {
+        margin-right: 0%;
+        display: grid;
+        align-items: center;
+        grid-template-columns: 50% 70%;
+        overflow: hidden;
+        position: relative;
+        bottom: 100px;
+        z-index: 1;
+    }
+
+    .container .element-left {
+        width: 100%;
+
+    }
+
+    .container .image {
+        content: url(./assets/image-hero-desktop.png);
+        width: 100%;
+        height: 700px;
+        object-fit: cover;
+        position: relative;
+        left: 10px;
+        right: 90px;
+        bottom: 80px;
+
+    }
+
+    .grid-elements {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 40px;
+    }
+
+    .grid-elements .h3 {
+        padding: 30px 0px 4px 10%;
+    }
+
+    .grid-elements a {
+
+        font-weight: 800;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 769px) {
+
+    nav p {
+        margin-left: 10%;
+    }
+
+    nav button {
+        margin-right: 10%;
+    }
+
+    .container {
+        margin-left: 10%;
+    }
+
+    .container .element-left {
+
+        width: 70%;
+    }
+
+
+    .grid-elements {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 40px;
+    }
+
+    .grid-elements p {
+        padding-left: 10%;
+        padding-right: 5px
+    }
+
+    footer p {
+        margin-left: 10%;
+    }
+
+    footer button {
+        margin-right: 10%;
+    }
+}

@@ -12,10 +12,10 @@ nav {
 }
 
 nav p {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 800;
     line-height: 35px;
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 nav button {
@@ -24,7 +24,7 @@ nav button {
     border: 0;
     cursor: pointer;
     background-color: #13183F;
-    margin-right: 5%;
+    margin-right: 13%;
     z-index: 2;
 }
 
@@ -42,23 +42,41 @@ nav a {
 }
 
 .container {
-    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    row-gap: 40px;
+    margin-left: 10%;
     margin-right: 5%;
 }
 
+.container div.element-left {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 20%;
+   
+
+}
+.container div.desktopImage{
+    overflow: hidden;
+    margin-top: -250px;
+    margin-left: 220px;
+}
 .container h1 {
-    font-size: 40px;
+    font-size: 56px;
     font-weight: 800;
-    line-height: 50px;
+    line-height: 70px;
     letter-spacing: 0px;
 }
 
 .container p {
-    font-size: 16px;
-    line-height: 26px;
+    width: auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
     letter-spacing: 0px;
     text-align: left;
     color: #83869A;
+    padding-right: 32%;
 }
 
 .container button {
@@ -84,27 +102,26 @@ nav a {
     line-height: 26px;
 }
 
-.container img {
-    
-    padding-top: 36px;
-}
-
 .grid-elements {
+
     margin-left: 5%;
     margin-right: 5%;
     display: grid;
     row-gap: 40px;
 }
 
-.grid-elements .h3 {
+.grid-elements div.h3 {
     background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
     border-radius: 10px;
-    padding: 4px 0px 4px 10%;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
     color: white;
-    font-size: 20px;
+    font-size: 32.5px;
     font-weight: 800;
-    line-height: 32px;
-    letter-spacing: 0px;
+    line-height: 42px;
+    letter-spacing: 2px;
+    width: 80%;
 }
 
 .box {
@@ -112,6 +129,14 @@ nav a {
     background-color: white;
     border-radius: 10px;
     height: aut0;
+}
+
+.grid-elements {
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 40px;
 }
 
 .grid-elements img {
@@ -132,16 +157,16 @@ nav a {
 
 .grid-elements p {
     padding-left: 10%;
-    padding-right: 5%;
+    padding-right: 10%;
+    padding-bottom: 5%;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     color: #83869A;
     line-height: 26px;
     letter-spacing: 0px;
 }
 
 .hover {
-    padding: 24px;
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
@@ -150,10 +175,12 @@ nav a {
 .grid-elements a {
     text-decoration: none;
     color: #F74780;
+    
 }
 
 .grid-elements a:hover {
     color: #FFA7C3;
+    
 }
 
 footer {
@@ -169,7 +196,7 @@ footer p {
     font-size: 28px;
     font-weight: 800;
     line-height: 35px;
-    margin-left: 5%;
+    margin-left: 10%;
     font-size: 25px;
     line-height: 35px;
     color: white;
@@ -182,7 +209,7 @@ footer button {
     border: 0;
     cursor: pointer;
     background: linear-gradient(to bottom, #4851FF 20%, #F02AA6 80%);
-    margin-right: 5%;
+    margin-right: 10%;
 }
 
 footer button:hover {
@@ -199,92 +226,197 @@ footer a {
 }
 
 
-@media (min-width: 480px) {
 
-    .container {
-        margin-right: 0%;
-        display: grid;
-        align-items: center;
-        grid-template-columns: 50% 70%;
-        overflow: hidden;
-        position: relative;
-        bottom: 100px;
-        z-index: 1;
-    }
+/* ............Tablet.............*/
 
-    .container .element-left {
-        width: 100%;
-
-    }
-
-    .container .image {
-        content: url(./assets/image-hero-desktop.png);
-        width: 100%;
-        height: 700px;
-        object-fit: cover;
-        position: relative;
-        left: 10px;
-        right: 90px;
-        bottom: 80px;
-
-    }
-
-    .grid-elements {
-
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 40px;
-    }
-
-    .grid-elements .h3 {
-        padding: 30px 0px 4px 10%;
-    }
-
-    .grid-elements a {
-
-        font-weight: 800;
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 769px) {
+@media (min-width: 481px) and (max-width: 768px){
 
     nav p {
-        margin-left: 10%;
+        margin-left: 5.5%;
     }
-
-    nav button {
-        margin-right: 10%;
-    }
-
     .container {
-        margin-left: 10%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        row-gap: 40px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .container div.desktopImage{
+        content: url(assets/image-hero-tablet.png);
+        overflow: hidden;
+        margin-top: -200px;
+        margin-left: -90px;
+    }
+    .container h1 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 50.4px;
+        letter-spacing: 0;
+       
     }
 
-    .container .element-left {
-
-        width: 70%;
+    .container p {
+        width: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #83869A;
+        padding-right: 5%;
     }
 
+    .grid-elements div.box {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        background-color: white;
+        border-radius: 10px;
+        height: aut0;
+
+    }
 
     .grid-elements {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 40px;
+        grid-template-columns: repeat(2 , 1fr);
+        column-gap: 5%;
     }
-
+    .grid-elements div.h3 {
+        background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
+        border-radius: 10px;
+        padding-left: 10%;
+        color: white;
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 30px;
+        letter-spacing: 0px;
+        width: 80%;
+    }
     .grid-elements p {
         padding-left: 10%;
-        padding-right: 5px
+        padding-right: 5%;
+        font-weight: 500;
+        font-size: 16px;
+        color: #83869A;
+        line-height: 26px;
+        letter-spacing: 0px;
     }
 
     footer p {
-        margin-left: 10%;
+        margin-left: 5%;
+
+    }
+    
+    footer button {
+        margin-right: 5%;
+    }
+  
+
+}
+
+
+/*.........Mobile.........*/
+
+@media (min-width: 360px) and (max-width: 480px) {
+    nav p {
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 35px;
+        margin-left: 5%;
+        margin-right: auto;
+    }
+    nav button {
+        padding: 15px 24px;
+        border-radius: 50px;
+        border: 0;
+        cursor: pointer;
+        background-color: #13183F;
+        margin-right: 5%;
+       
     }
 
+    .container {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .container div.element-left {
+        display: block;
+        margin-left: 0;   
+       
+    }
+    .container div.desktopImage{
+        content: url(assets/image-hero-mobile.png);
+        margin-left: -50px;
+        margin-right: 0;
+        margin-top: 20%;
+        
+    }
+    .container h1 {
+        display: block;
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 40.4px;
+        letter-spacing: 0;
+       
+    }
+
+    .container p {
+        display: block;
+        width: auto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #83869A;
+        padding-right: 5%;
+    }
+
+    .grid-elements {
+        display: block;
+        margin-left: 5%;
+        margin-right: 5%;
+    
+    }
+
+    .grid-elements div.box {
+        margin-top: 10%;
+        margin-bottom: 5%;
+        background-color: white;
+        border-radius: 10px;
+        height: aut0;
+
+    }
+    .grid-elements div.h3 {
+        background: linear-gradient(to bottom, #FF6F48 20%, #F02AA6 80%);
+        border-radius: 10px;
+        padding:10% 5% 5% 5%;
+        margin-right: auto;
+        margin-bottom: 20%;
+        height: 5%;
+        color: white;
+        font-size: 22px;
+        font-weight: 800;
+        line-height: 32px;
+        letter-spacing: 0px;
+        width: 90%;
+       
+    }
+    .grid-elements p {
+        font-weight: 500;
+        font-size: 16px;
+        color: #83869A;
+        line-height: 26px;
+        letter-spacing: 0px;
+    }
+    footer p {
+        margin-left: 5%;
+
+    }
+    
     footer button {
-        margin-right: 10%;
+        margin-right: 5%;
     }
 }

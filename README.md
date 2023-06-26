@@ -2,11 +2,7 @@
 
 This repo contains my project for career accelerator phase training with **AZUBIAFRICA**.
 
-The project is an E-skilled landing page with *html* and *css* only.
 
-It is meant for an online educational institution.
-
-The *assets* and projects guidlines were provided explicitely by **AMALITECH-GGMBH**.
 
 ## AUTHOR:
 
